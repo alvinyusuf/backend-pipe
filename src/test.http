@@ -1,0 +1,23 @@
+# POST http://localhost:5000/auth/login
+# Content-Type: application/json
+
+# {
+#   "username": "alvin",
+#   "password": "Rahasia2?"
+# }
+
+GET http://localhost:5000/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWx2aW4iLCJpYXQiOjE2OTk2OTYxMjcsImV4cCI6MTY5OTY5NjE4N30.8e1Qww9Sx-26L6fLjiitddYl0VrTqqN5sW8Ryd_mTRk
+
+# POST http://localhost:8080/books
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTc4NjMzMjV9.oTB6KuNLcwOWtcSUbjVpERs5KRNWmJiQWAQgKbIMyQc
+
+# {
+#   "id": "1",
+#   "title": "The Godfather",
+#   "author": "Mario Puzo"
+# }
+
+# DELETE http://localhost:8080/books/1
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTc4NjMzMjV9.oTB6KuNLcwOWtcSUbjVpERs5KRNWmJiQWAQgKbIMyQc
