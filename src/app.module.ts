@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { BookModule } from './book/book.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Book } from './book/entities/book.entity';
+import { UserModule } from './user/user.module';
+import { User } from './user/entities/user.entity';
 
 @Module({
   imports: [
@@ -16,9 +18,10 @@ import { Book } from './book/entities/book.entity';
       database: 'pipe',
       synchronize: true,
       logging: true,
-      entities: [Book],
+      entities: [Book, User],
     }),
     BookModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
